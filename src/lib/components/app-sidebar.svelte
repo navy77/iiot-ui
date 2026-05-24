@@ -79,7 +79,6 @@
 </script>
 <script lang="ts">
   import * as Sidebar from "$lib/components/ui/sidebar/index.js";
-  import Airplay from "@lucide/svelte/icons/Airplay";
   import type { ComponentProps } from "svelte";
   let { ref = $bindable(null), ...restProps }: ComponentProps<typeof Sidebar.Root> = $props();
 </script>
@@ -93,7 +92,6 @@
               <div
                 class="items-center justify-center rounded-lg"
               >
-                <Airplay class="size-20" />
               </div>
               <div class="flex flex-col gap-0.5 leading-none">
                 <span class="font-medium">Machine Monitoring System</span>

@@ -1,5 +1,6 @@
 <script lang="ts">
   import * as Card from "$lib/components/ui/card/index.js";
+  let { value } = $props();
 </script>
 
 
@@ -10,7 +11,10 @@
     </Card.Title>
   </Card.Header>
   <Card.Content>
-        <div class="text-7xl font-bold text-">100</div>
-        <p class="text-xs text-muted-foreground">Units</p>
+        <div class="text-7xl font-bold text-center">{value}</div>
+        <div class="text-xs text-muted-foreground text-right ">Units</div>
   </Card.Content>
 </Card.Root>
+
+
+
