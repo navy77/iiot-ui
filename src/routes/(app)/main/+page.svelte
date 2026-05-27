@@ -1,8 +1,10 @@
 <script lang="ts">
   import MainCard from "@/components/main/main-card.svelte";
-  import Chart1 from "@/components/main/main-chart-device.svelte";
+  import ActualDevice from "@/components/main/main-chart-device.svelte";
+
 
   let { data } = $props();
+  console.log(data)
 </script>
 
 <div class="flex flex-1 flex-col gap-4 p-4">
@@ -16,9 +18,8 @@
 
   
   <div class="grid auto-rows-min gap-4 md:grid-cols-2">
-    <div class="bg-muted/50 aspect-video rounded-xl"><Chart1/></div>
+    <div class="bg-muted/50 aspect-video rounded-xl"><ActualDevice data={data.statusChartData}/></div>
     <div class="bg-muted/50 aspect-video rounded-xl"></div>
   </div>
 
 </div>
-pie-chart.svelte

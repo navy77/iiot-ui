@@ -23,7 +23,10 @@
 
   function updateChart(chartData: any[]) {
     myChart.setOption({
+      title: {text: 'Device Status',left: 'center',top: '2%'},
       tooltip: { trigger: 'item' },
+      legend: {botton: '5%',left: 'center'},
+      color: ['#41c732', '#f59e0b', '#ef4444'],
       series: [{
         type: 'pie',
         radius: ['20%', '70%'],
